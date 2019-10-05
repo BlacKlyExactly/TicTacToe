@@ -1,0 +1,29 @@
+button{
+    font-family: 'Montserrat', sans-serif;
+    border:.2vw solid white;
+    background: transparent;
+    color:white;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    @media screen and (min-width: 700px) {
+        height:5vw;
+        width: 15vw;
+    }
+    @media screen and (min-width: 1000px) {
+        height:4vw;
+        width: 12vw;
+        border:.1vw solid white;
+        font-size:1.2vw;
+        margin-top:20px;
+    }
+   &:hover{
+       transition-property: background color;
+       transition:0.2s;
+       background: white;
+       color: #9696eb;
+       cursor: pointer;
+   }
+}

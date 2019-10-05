@@ -1,6 +1,11 @@
 <div class='board'>
     <Field 
         *ngFor='let field of fields'
+        [value]='field.fill'
+        [turn]='turn'
+        [field]='field'
+        [fields]='fields'
+        [gameProgress]='gameProgress'
     >
     </Field>
 </div>

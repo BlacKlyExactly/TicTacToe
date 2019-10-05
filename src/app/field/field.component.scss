@@ -1,8 +1,9 @@
 .field{
+    font-family: 'Montserrat', sans-serif;
     height: 100%;
     width: 100%;
-    margin: auto;
     border:none;
+    position: relative;
     transition-property: background;
     transition: 0.2s;
     background: transparent;
@@ -11,5 +12,24 @@
         background: #b8b8f2;
         box-shadow: none;
         cursor: pointer;
+    }
+    span{
+        height: 100%;
+        width: 100%;
+        color:white;
+        font-weight: bold;
+        font-size:12vmin;
+    }
+}
+.X{
+    background: #e851de !important;
+}
+.O{
+    background: #e81c44 !important;
+}
+.X, .O{
+    &:hover{
+        cursor:not-allowed;
+        box-shadow: 0 0 2px 1px white;
     }
 }

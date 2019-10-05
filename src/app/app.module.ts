@@ -6,12 +6,14 @@ import { BoardComponent } from './board/board.component';
 import { FieldComponent } from './field/field.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { NewGameButtonComponent } from './new-game-button/new-game-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BoardComponent,
-    FieldComponent
+    FieldComponent,
+    NewGameButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +21,6 @@ import { environment } from '../environments/environment';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [BoardComponent, FieldComponent]
+  exports: [BoardComponent, FieldComponent, NewGameButtonComponent]
 })
 export class AppModule { }

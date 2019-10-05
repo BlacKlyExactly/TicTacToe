@@ -1,8 +1,9 @@
 <div class='wrapper'>
         <div class="stats">
             <h1 class='stats__title'><span>Tic</span> Tac <span>Toe</span></h1>
-            <div class='stats__turn'>Turn: <span>O</span></div>
-            <div class='stats__summary'><span>X</span> 0 : 0 <span>O</span></div>
+            <div class='stats__turn'>Turn: <span>{{turn}}</span></div>
+            <div class='stats__summary'><span>X</span> {{xWins}} : {{oWins}} <span>O</span></div>
+            <NewGameButton></NewGameButton>
         </div>
-    <Board></Board>
+    <Board [turn]='turn'></Board>
 </div>

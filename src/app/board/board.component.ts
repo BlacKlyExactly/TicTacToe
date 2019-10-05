@@ -61,7 +61,7 @@ export class BoardComponent implements OnInit{
               })
               window.dispatchEvent(endEvent);
               Swal.fire({
-                title:'X won',
+                title:'"X" won',
                 text:'Congratulations my master'
               })
             }
@@ -73,7 +73,7 @@ export class BoardComponent implements OnInit{
               })
               window.dispatchEvent(endEvent);
               Swal.fire({
-                title:'O won',
+                title:'"O" won',
                 text:'Gr8 m8'
               })
             }

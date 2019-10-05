@@ -1,0 +1,15 @@
+.field{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    border:none;
+    transition-property: background;
+    transition: 0.2s;
+    background: transparent;
+    box-shadow: 0 0 2px 1px white;
+    &:hover{
+        background: #b8b8f2;
+        box-shadow: none;
+        cursor: pointer;
+    }
+}

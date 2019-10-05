@@ -1,0 +1,20 @@
+.board{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: .5vw;
+    width: 98vw;
+    position: relative;
+    padding: .5vw;
+    height:98vw;
+    background: #9696eb;
+    @media screen and (min-width:500px) {
+        height: 50vmin;
+        width: 50vmin;
+    }
+    @media screen and (min-width:700px) {
+        height: 38vw;
+        width: 38vw;
+        margin-left: 4vw;
+    }
+}

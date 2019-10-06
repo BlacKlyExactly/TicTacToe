@@ -36,6 +36,9 @@ export class AppComponent implements OnInit{
       if(this.turn === 'X') this.turn = 'O'
       else if(this.turn === 'O') this.turn = 'X'
     })
+    window.addEventListener('newGame', ()=>{
+        this.turn = 'O';
+    })
   }
   ngOnInit(){
     const board = document.querySelector('.board');

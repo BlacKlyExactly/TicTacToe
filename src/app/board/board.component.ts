@@ -93,7 +93,6 @@ export class BoardComponent implements OnInit{
         { number: 9, fill: null }
       ]
       this.gameProgress = 'not ended';
-      this.turn = 'O';
   }
 
 }
